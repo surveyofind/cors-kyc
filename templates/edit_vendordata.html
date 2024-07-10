@@ -193,47 +193,45 @@
             <div class="col">
                 <label class="form-label">GNSS Data Frequencies:</label><br>
                 <label for="gps_frequencies">GPS:</label><br>
-                <input type="checkbox" id="gps_l1" name="gnss_data_frequencies" value="GPS L1" {% if 'GPS L1' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="gps_l1">L1</label>
-                <input type="checkbox" id="gps_l2" name="gnss_data_frequencies" value="GPS L2" {% if 'GPS L2' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="gps_l2">L2</label>
-                <input type="checkbox" id="gps_l3" name="gnss_data_frequencies" value="GPS L3" {% if 'GPS L3' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="gps_l3">L3</label>
-                <input type="checkbox" id="gps_l4" name="gnss_data_frequencies" value="GPS L4" {% if 'GPS L4' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="gps_l4">L4</label>
+                <input type="checkbox" id="gps_l1" name="gnss_data_frequencies" value="GPS L1C" {% if 'GPS L1C' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="gps_l1">L1C</label>
+                <input type="checkbox" id="gps_l2" name="gnss_data_frequencies" value="GPS L1C/A" {% if 'GPS L1C/A' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="gps_l2">L1C/A</label>
+                <input type="checkbox" id="gps_l3" name="gnss_data_frequencies" value="GPS L2E(L2P)" {% if 'GPS L2E(L2P)' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="gps_l3">L2E(L2P)</label>
+                <input type="checkbox" id="gps_l4" name="gnss_data_frequencies" value="GPS L2C" {% if 'GPS L2C' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="gps_l4">L2C</label>
                 <input type="checkbox" id="gps_l5" name="gnss_data_frequencies" value="GPS L5" {% if 'GPS L5' in vendor.gnss_data_frequencies %} checked {% endif %}>
                 <label for="gps_l5">L5</label><br>
 
                 <label for="galileo_frequencies">Galileo:</label><br>
-                <input type="checkbox" id="galileo_E1" name="gnss_data_frequencies" value="Galileo L1" {% if 'Galileo L1' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <input type="checkbox" id="galileo_E1" name="gnss_data_frequencies" value="Galileo E1" {% if 'Galileo E1' in vendor.gnss_data_frequencies %} checked {% endif %}>
                 <label for="galileo_E1">E1</label>
-                <input type="checkbox" id="galileo_l2" name="gnss_data_frequencies" value="Galileo L2" {% if 'Galileo L2' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="galileo_l2">L2</label>
-                <input type="checkbox" id="galileo_l3" name="gnss_data_frequencies" value="Galileo L3" {% if 'Galileo L3' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="galileo_l3">L3</label>
-                <input type="checkbox" id="galileo_l4" name="gnss_data_frequencies" value="Galileo L4" {% if 'Galileo L4' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="galileo_l4">L4</label>
-                <input type="checkbox" id="galileo_l5" name="gnss_data_frequencies" value="Galileo L5" {% if 'Galileo L5' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="galileo_l5">L5</label><br>
+                <input type="checkbox" id="galileo_l2" name="gnss_data_frequencies" value="Galileo E5A" {% if 'Galileo E5A' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="galileo_l2">E5A</label>
+                <input type="checkbox" id="galileo_l3" name="gnss_data_frequencies" value="Galileo E5B and E5AltBOC" {% if 'Galileo E5B and E5AltBOC' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="galileo_l3">E5B and E5AltBOC</label>
+                <input type="checkbox" id="galileo_l4" name="gnss_data_frequencies" value="Galileo E6" {% if 'Galileo E6' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="galileo_l4">E6</label><br>
+                
 
               
                 <label for="gps_frequencies">Glonass:</label><br>
                 <input type="checkbox" id="glonass_l1c/a" name="gnss_data_frequencies" value="Glonass L1C/A" {% if 'Glonass L1C/A' in vendor.gnss_data_frequencies %} checked {% endif %}>
                 <label for="glonass_l1c/a">L1C/A</label>
-                <input type="checkbox" id="glonass_l2c" name="gnss_data_frequencies" value="Glonass L2C" {% if 'Glonass L2C' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="glonass_l2c">L2C</label>
-                <input type="checkbox" id="glonass_l2p" name="gnss_data_frequencies" value="Glonass L2P" {% if 'Glonass L2P' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="glonass_l2p">L2P</label>
-                <input type="checkbox" id="glonass_l3oc" name="gnss_data_frequencies" value="Glonass L3OC" {% if 'Glonass L3OC' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="glonass_l3oc">L3OC</label><br>
+                <input type="checkbox" id="glonass_l2c" name="gnss_data_frequencies" value="Glonass L2C/A" {% if 'Glonass L2C/A' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="glonass_l2c">L2C/A</label>
+                <input type="checkbox" id="glonass_l2p" name="gnss_data_frequencies" value="Glonass L3 CDMA" {% if 'Glonass L3 CDMA' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="glonass_l2p">L3 CDMA</label><br>
+               
 
                 <label for="galileo_frequencies">BeiDou:</label><br>
-                <input type="checkbox" id="beidou_b1i" name="gnss_data_frequencies" value="BeiDou B1I" {% if 'BeiDou B1I' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="beidou_b1i">B1I</label>
-                <input type="checkbox" id="beidou_b2i" name="gnss_data_frequencies" value="BeiDou B2I" {% if 'BeiDou B2I' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="beidou_b2i">B2I</label>
-                <input type="checkbox" id="beidou_b3i" name="gnss_data_frequencies" value="BeiDou B3I" {% if 'BeiDou B3I' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="beidou_b3i">B3I</label>
+                <input type="checkbox" id="beidou_b1i" name="gnss_data_frequencies" value="BeiDou B1" {% if 'BeiDou B1' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="beidou_b1i">B1</label>
+                <input type="checkbox" id="beidou_b2i" name="gnss_data_frequencies" value="BeiDou B2" {% if 'BeiDou B2' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="beidou_b2i">B2</label>
+                <input type="checkbox" id="beidou_b3i" name="gnss_data_frequencies" value="BeiDou B3" {% if 'BeiDou B3' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="beidou_b3i">B3</label>
                 <input type="checkbox" id="beidou_b1c" name="gnss_data_frequencies" value="BeiDou B1C" {% if 'BeiDou B1C' in vendor.gnss_data_frequencies %} checked {% endif %}>
                 <label for="beidou_b1c">B1C </label>
                 <input type="checkbox" id="beidou_b2a" name="gnss_data_frequencies" value="BeiDou B2A" {% if 'BeiDou B2A' in vendor.gnss_data_frequencies %} checked {% endif %}>
@@ -243,10 +241,10 @@
 
 
                 <label for="galileo_frequencies">SBAS:</label><br>
-                <input type="checkbox" id="sbas_l1" name="gnss_data_frequencies" value="SBAS L1" {% if 'SBAS L1' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="sbas_l1">L1</label>
-                <input type="checkbox" id="sbas_l5" name="gnss_data_frequencies" value="SBAS L5" {% if 'SBAS L5' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="sbas_l5">L5 </label><br>
+                <input type="checkbox" id="sbas_l1" name="gnss_data_frequencies" value="SBAS L1C/A" {% if 'SBAS L1C/A' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="sbas_l1">L1C/A</label>
+                <input type="checkbox" id="sbas_l5" name="gnss_data_frequencies" value="SBAS L1C/A and L5" {% if 'SBAS L1C/A and L5' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="sbas_l5">L1C/A and L5 </label><br>
 
                 <label for="galileo_frequencies">QZSS:</label><br>
                 <input type="checkbox" id="qzss_l1c/a" name="gnss_data_frequencies" value="QZSS L1C/A" {% if 'QZSS L1C/A' in vendor.gnss_data_frequencies %} checked {% endif %}>
@@ -259,8 +257,14 @@
                 <label for="qzss_l2c">L2C </label>
                 <input type="checkbox" id="qzss_l5" name="gnss_data_frequencies" value="QZSS L5" {% if 'QZSS L5' in vendor.gnss_data_frequencies %} checked {% endif %}>
                 <label for="qzss_l5">L5 </label>
-                <input type="checkbox" id="qzss_l6" name="gnss_data_frequencies" value="QZSS L6" {% if 'QZSS L6' in vendor.gnss_data_frequencies %} checked {% endif %}>
-                <label for="qzss_l6">L6 </label><br>
+                <input type="checkbox" id="qzss_l6" name="gnss_data_frequencies" value="QZSS LEX/L6" {% if 'QZSS LEX/L6' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="qzss_l6">LEX/L6 </label><br>
+
+                <label for="galileo_frequencies">IRNSS:</label><br>
+                <input type="checkbox" id="qzss_l1c/a" name="gnss_data_frequencies" value="irnss L5" {% if 'irnss L5' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="qzss_l1c/a">L5</label>
+                <input type="checkbox" id="qzss_l1c" name="gnss_data_frequencies" value="irnss S-Band" {% if 'irnss S-Band' in vendor.gnss_data_frequencies %} checked {% endif %}>
+                <label for="qzss_l1c">S-Band</label>
 
             </div>
             <div class="col">
